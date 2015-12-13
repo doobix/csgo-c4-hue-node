@@ -1,0 +1,20 @@
+{
+  "name": "csgo-c4-hue",
+  "version": "0.0.1",
+  "description": "CS:GO C4 Game State Integration with Philips Hue Lights",
+  "main": "csgo-c4-hue-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node csgo-c4-hue-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doobix/csgo-c4-hue.git"
+  },
+  "author": "doobix",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
