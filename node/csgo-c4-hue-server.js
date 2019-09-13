@@ -13,7 +13,9 @@ app.post('/', function(req, res) {
       if (!newBombStatus) {
         newBombStatus = '';
       }
-      fs.writeFile('bomb_status', newBombStatus);
+      fs.writeFile('bomb_status', newBombStatus, (err) => {
+        console.error(`Failed to write file: ${err}`);
+      });
       console.log(newBombStatus);
     }
   });
